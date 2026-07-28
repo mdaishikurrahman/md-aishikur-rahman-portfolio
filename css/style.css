@@ -1,0 +1,1144 @@
+//*======================================
+    Google Font
+======================================*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/*======================================
+    Reset CSS
+======================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #353535;
+    overflow-x: hidden;
+}
+
+:root{
+    --primaryFont: 'Poppins', sans-serif;
+    --secondaryFont: 'PT Sans', sans-serif;
+    --PrimaryColor: #353535;
+    --secondaryColor: #7A7A7A;
+    --buttonColor: #FFCC00;
+    --bg-gradiant: linear-gradient(95.13deg,#FFCC00 -21.46%,#FFF5CB 112.13%);
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--PrimaryColor);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*======================================
+    Button
+======================================*/
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 30px;
+    border: 1px solid var(--PrimaryColor);
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+    margin-top: 35px;
+}
+
+.button:hover{
+    background: var(--buttonColor);
+    color: #fff;
+    border-color: var(--buttonColor);
+}
+
+.button i{
+    margin-left: 5px;
+}
+
+/*======================================
+    Navbar
+======================================*/
+
+nav{
+    padding: 20px 0;
+    position: relative;
+}
+
+nav .logo{
+    width: 20%;
+}
+
+nav .logo img{
+    width: 180px;
+}
+
+nav .menu{
+    width: 80%;
+}
+
+nav .menu ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+nav .menu ul li a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+    font-family: var(--primaryFont);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+nav .menu ul li a:hover{
+    color: var(--buttonColor);
+}
+
+nav .menu ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: var(--PrimaryColor);
+    transition: .3s;
+}
+
+nav .menu ul li a:hover::before{
+    width: 100%;
+}
+
+
+/*==========================
+        Mobile Menu
+===========================*/
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:28px;
+    cursor:pointer;
+    color:var(--PrimaryColor);
+}
+
+@media(max-width:992px){
+
+.menu-toggle{
+    display:block;
+}
+
+nav .menu{
+    display:none;
+    width:100%;
+}
+
+nav .menu.active{
+    display:block;
+}
+
+nav .menu ul{
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+}
+
+nav .menu ul li{
+    margin:15px 0;
+}
+
+}
+
+/*======================================
+    Hamburger Button
+======================================*/
+
+.menu-toggle{
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: var(--PrimaryColor);
+    cursor: pointer;
+}
+=====================================
+            Banner
+======================================*/
+
+#banner{
+    padding:70px 0;
+}
+
+#banner .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+#banner .b-text{
+    width:55%;
+}
+
+#banner .banner-img{
+    width:45%;
+    text-align:center;
+}
+
+#banner .banner-img img{
+    width:100%;
+    max-width:500px;
+    height:auto;
+    margin:0 auto;
+}
+
+.b-text h5{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:24px;
+    font-weight:400;
+    margin-bottom:15px;
+}
+
+.b-text h5 img{
+    width:30px;
+    height:30px;
+}
+
+.b-text h1{
+    font-family:var(--secondaryFont);
+    font-size:48px;
+    line-height:60px;
+    font-weight:700;
+    margin-bottom:25px;
+    color:var(--PrimaryColor);
+}
+
+.b-text p{
+    width:100%;
+    max-width:620px;
+    font-size:20px;
+    line-height:34px;
+    color:var(--secondaryColor);
+    margin-bottom:35px;
+}
+
+.banner-btn{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+
+/*======================================
+            About
+======================================*/
+
+#about{
+    margin-top:80px;
+    padding:80px 0;
+    background:linear-gradient(95.13deg,#d8eed4 -21.46%,#FFF5CB 112.13%);
+    position:relative;
+    overflow:hidden;
+}
+
+#about .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+#about .abt-img{
+    width:45%;
+}
+
+#about .abt-img img{
+    width:100%;
+    max-width:520px;
+    height:auto;
+    margin:0 auto;
+}
+
+#about .abt-text{
+    width:55%;
+}
+
+#about .abt-text h2{
+    font-family:var(--secondaryFont);
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:25px;
+    color:var(--PrimaryColor);
+}
+
+#about .abt-text p{
+    max-width:570px;
+    font-size:20px;
+    font-weight:400;
+    line-height:34px;
+    color:var(--secondaryColor);
+    margin-bottom:35px;
+}
+
+#about .abt-text .button{
+    margin-top:0;
+}
+
+#about .circle1{
+    position:absolute;
+    right:-90px;
+    bottom:0;
+    width:180px;
+    height:90px;
+    border-radius:180px 180px 0 0;
+    background:linear-gradient(180deg,#52AB70 0%,rgba(82,171,112,.45) 100%);
+}
+
+
+
+/*======================================
+            Project Section
+======================================*/
+
+#project{
+    margin-top:150px;
+}
+
+#project .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/*=========================
+    Left Side
+=========================*/
+
+#project .project-content{
+    width:38%;
+}
+
+.project-link{
+    display:block;
+    margin-bottom:22px;
+    text-decoration:none;
+    color:inherit;
+}
+
+#project .project-card{
+    background:#F8F9FA;
+    border:1px solid #EEEEEE;
+    border-radius:20px;
+    padding:22px 28px;
+    box-shadow:0 4px 20px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+#project .project-card:hover{
+    background:#FFFFFF;
+    border-color:var(--buttonColor);
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+}
+
+#project .project-card .row{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:18px;
+}
+
+/*=========================
+        Icons
+=========================*/
+
+.project-card .icon{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-shrink:0;
+}
+
+.project-card .icon i{
+    color:#fff;
+    font-size:26px;
+}
+
+/* Icon Colors */
+
+.green{
+    background:#55852F;
+}
+
+.yellow{
+    background:#FEDC2A;
+}
+
+.orange{
+    background:#FF8D3A;
+}
+
+.purple{
+    background:#B7A9F5;
+}
+
+.darkgreen{
+    background:#054719;
+}
+
+.red{
+    background:#850E09;
+}
+
+/*=========================
+      Card Text
+=========================*/
+
+.project-card-text h3{
+    font-size:20px;
+    font-weight:600;
+    color:var(--PrimaryColor);
+    margin-bottom:6px;
+}
+
+.project-card-text h6{
+    font-size:15px;
+    font-weight:500;
+    color:var(--secondaryColor);
+    line-height:22px;
+}
+
+/*=========================
+     Right Side
+=========================*/
+
+#project .project-text{
+    width:50%;
+    text-align:right;
+}
+
+#project .project-text h2{
+    font-family:var(--secondaryFont);
+    font-size:56px;
+    font-weight:700;
+    line-height:1.2;
+    color:var(--PrimaryColor);
+    margin-bottom:25px;
+}
+
+#project .project-text p{
+    font-size:20px;
+    font-weight:400;
+    line-height:36px;
+    color:var(--secondaryColor);
+    margin-bottom:45px;
+}
+
+.project-text .list{
+    margin-top:15px;
+}
+
+.project-text .list ul{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:80px;
+}
+
+.project-text .list li{
+    text-align:center;
+}
+
+.project-text .list h3{
+    font-family:var(--secondaryFont);
+    font-size:46px;
+    font-weight:700;
+    line-height:1;
+    color:var(--PrimaryColor);
+    margin-bottom:8px;
+}
+
+.project-text .list p{
+    font-size:15px;
+    font-weight:500;
+    line-height:24px;
+    color:var(--secondaryColor);
+}
+
+
+/*======================================
+        Experience Section
+======================================*/
+#experience{
+    margin-top:180px;
+}
+
+#experience .container h2{
+    font-family:var(--secondaryFont);
+    font-size:50px;
+    font-weight:700;
+    text-align:center;
+    color:var(--PrimaryColor);
+    margin-bottom:80px;
+}
+
+.experience-area{
+    position:relative;
+}
+
+/* Vertical Timeline */
+
+.experience-area::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:32%;
+    width:2px;
+    height:100%;
+    border-left:2px dashed #BDBDBD;
+}
+
+.experience-content{
+    margin-bottom:70px;
+}
+
+.experience-content:last-child{
+    margin-bottom:0;
+}
+
+#experience .experience-content .row{
+    display:flex;
+    justify-content:space-between;
+}
+
+.experience-content .left-content{
+    width:28%;
+    padding-right:40px;
+}
+
+.experience-content .left-content h3{
+    font-size:22px;
+    font-weight:600;
+    line-height:34px;
+    color:var(--PrimaryColor);
+}
+
+.experience-content .left-content p{
+    margin-top:12px;
+    font-size:16px;
+    font-weight:500;
+    color:var(--secondaryColor);
+}
+
+.experience-content .right-content{
+    width:60%;
+    padding-left:32px;    
+    position:relative;
+}
+
+.experience-content .right-content h3{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:18px;
+    color:var(--PrimaryColor);
+}
+
+.experience-content .right-content p{
+    font-size:18px;
+    line-height:34px;
+    color:var(--secondaryColor);
+}
+
+/*======================================
+        Timeline Circle
+======================================*/
+
+.experience-content .right-content::after{
+    content:'';
+    position:absolute;
+    width:42px;
+    height:42px;
+    border:2px dashed #BDBDBD;
+    border-radius:50%;
+    background:#fff;
+    top:0;
+    left:-91px;      /* Center Fixed */
+    z-index:1;
+}
+
+.experience-content .right-content::before{
+    content:'';
+    position:absolute;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    top:11px;
+    left:-80px;      /* Center Fixed */
+    background:#52AB70;
+    z-index:2;
+}
+
+/*======================================
+        Timeline Dot Colors
+======================================*/
+
+.experience-content:nth-child(1) .right-content::before{
+    background:#52AB70;
+}
+
+.experience-content:nth-child(2) .right-content::before{
+    background:#F17676;
+}
+
+.experience-content:nth-child(3) .right-content::before{
+    background:#FFD233;
+}
+
+.experience-content:nth-child(4) .right-content::before{
+    background:#6933FF;
+}
+
+.experience-content:nth-child(5) .right-content::before{
+    background:#16C172;
+}
+
+.experience-content:nth-child(6) .right-content::before{
+    background:#EC12A4;
+}
+
+/*======================================
+        Expertise Section
+======================================*/
+
+#text-1{
+    margin-top:180px;
+}
+
+#text-1 .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+#text-1 .text-e{
+    width:50%;
+}
+
+#text-1 .text-e h2{
+    font-family:var(--secondaryFont);
+    font-size:50px;
+    font-weight:700;
+    color:var(--PrimaryColor);
+    margin-bottom:40px;
+}
+
+#text-1 .text-e p{
+    font-size:20px;
+    line-height:38px;
+    color:var(--secondaryColor);
+    margin-bottom:30px;
+}
+
+#text-1 .text-e .button{
+    margin-top:20px;
+}
+
+/*=========================
+      Right Side
+=========================*/
+
+#text-1 .text-1-cntnt{
+    width:42%;
+    padding-left:70px;
+}
+
+#text-1 .text-1-cntnt .button{
+    margin-top:0;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+/*=========================
+      Progress Area
+=========================*/
+
+.text-1-cntnt .progress-area{
+    margin-top:35px;
+}
+
+.text-1-cntnt .progress-area h3{
+    font-size:18px;
+    font-weight:600;
+    color:var(--PrimaryColor);
+    margin-bottom:12px;
+}
+
+.text-1-cntnt .progress-bar{
+    width:100%;
+    height:8px;
+    background:#D9D9D9;
+    border-radius:50px;
+    position:relative;
+    overflow:visible;
+}
+
+.text-1-cntnt .progress-top{
+    height:100%;
+    border-radius:50px;
+    position:relative;
+}
+
+.text-1-cntnt .progress-top span{
+    position:absolute;
+    top:-28px;
+    right:0;
+    transform:translateX(50%);
+    font-size:16px;
+    font-weight:600;
+    white-space:nowrap;
+}
+#education{
+        margin-top:147px;
+        background:#ebf5d1;
+        padding:84px 0;
+        text-align:center;
+    }
+    
+ #education .container h2{
+        font-family:var(--secondaryFont);
+        font-size:50px;
+        font-weight:700;
+    }
+    
+    #education .container > p{
+        width:650px;
+        margin:auto;
+        margin-top:15px;
+        font-size:18px;
+        color:#7A7A7A;
+        line-height:32px;
+    }
+    
+    #education .row{
+        display:flex;
+        justify-content:space-between;
+        gap:30px;
+    }
+    
+    #education .education-card{
+        width:calc(33.33% - 20px);
+        background:#fff;
+        border-radius:20px;
+        box-shadow:0 4px 30px rgba(0,0,0,.08);
+        padding:40px 30px;
+        transition:.35s;
+    }
+    
+    #education .education-card:hover{
+        transform:scale(1.08);
+        background:linear-gradient(158.91deg,#85dfeb 3.12%,#FFE476 94.59%);
+    }
+    
+    #education .education-card h3{
+        font-size:24px;
+        font-weight:600;
+        margin-bottom:10px;
+    }
+    
+    #education .education-card h4{
+        font-size:18px;
+        color:#FF8D3A;
+        margin-bottom:15px;
+    }
+    
+    #education .education-card span{
+        display:block;
+        font-size:15px;
+        color:#666;
+        margin-bottom:8px;
+    }
+    
+    #education .education-card p{
+        margin-top:20px;
+        font-size:17px;
+        color:#353535;
+        line-height:28px;
+    }
+    
+    #education .education-card:hover h3,
+    #education .education-card:hover h4,
+    #education .education-card:hover span,
+    #education .education-card:hover p{
+        color:#353535;
+    }
+
+ /*======================================
+            Service Section
+======================================*/
+
+#service{
+    margin-top:150px;
+    background:#FFF7D5;
+    padding:85px 0 100px;
+}
+
+#service .container{
+    text-align:center;
+}
+
+#service .container h2{
+    font-family:var(--secondaryFont);
+    font-size:50px;
+    font-weight:700;
+    color:var(--PrimaryColor);
+}
+
+#service .container > p{
+    width:620px;
+    margin:20px auto 0;
+    font-size:18px;
+    line-height:32px;
+    color:var(--secondaryColor);
+}
+
+/* Cards */
+
+#service .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:stretch;
+    gap:30px;
+    margin-top:80px;
+}
+
+#service .service-card{
+    width:calc(33.333% - 20px);
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 4px 30px rgba(0,0,0,.08);
+    padding:40px 35px 50px;
+    transition:.35s;
+}
+
+#service .service-card:hover{
+    transform:translateY(-8px);
+    background:linear-gradient(158.91deg,#f3b4db 3.12%,#cfc0f1 94.59%);
+}
+
+#service .service-card h3{
+    font-size:24px;
+    font-weight:600;
+    color:var(--PrimaryColor);
+    margin-bottom:20px;
+}
+
+#service .service-card p{
+    font-size:17px;
+    font-weight:400;
+    line-height:30px;
+    color:var(--secondaryColor);
+}
+
+/*======================================
+        Certifications Section
+======================================*/
+
+#certifications{
+    margin-top:150px;
+    padding:90px 0;
+    background:#F8F9FC;
+    text-align:center;
+}
+
+#certifications .container{
+    width:1320px;
+    margin:auto;
+}
+
+#certifications h2{
+    font-family:var(--secondaryFont);
+    font-size:50px;
+    font-weight:700;
+    color:var(--PrimaryColor);
+    margin-bottom:80px;
+}
+
+#certifications .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:stretch;
+    gap:25px;
+}
+
+#certifications .certifi-card{
+    width:20%;
+    background:#FFFFFF;
+    border-radius:20px;
+    padding:35px 25px;
+    box-shadow:0 4px 25px rgba(0,0,0,.08);
+    border-top:6px solid #FF8D3A;
+    transition:0.35s ease;
+    cursor:pointer;
+}
+
+/* Hover Effect (Same as Service Section) */
+#certifications .certifi-card:hover{
+    transform:scale(1.10);
+    background:linear-gradient(158.91deg,#cfebbf 3.12%,#f1bbbb 94.59%);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    z-index:10;
+}
+
+#certifications .certifi-card h3{
+    font-size:20px;
+    font-weight:600;
+    color:#FF8D3A;
+    line-height:30px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+#certifications .certifi-card span{
+    display:inline-block;
+    padding:7px 18px;
+    background:#FFCC00;
+    color:#353535;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+#certifications .certifi-card p{
+    font-size:15px;
+    line-height:28px;
+    color:var(--secondaryColor);
+    transition:.3s;
+}
+
+#certifications .certifi-card p strong{
+    display:block;
+    font-size:16px;
+    color:var(--PrimaryColor);
+    margin-bottom:12px;
+    transition:.3s;
+}
+
+/* Hover Text Color */
+#certifications .certifi-card:hover h3,
+#certifications .certifi-card:hover p,
+#certifications .certifi-card:hover strong{
+    color:var(--PrimaryColor);
+}
+
+#certifications .certifi-card:hover span{
+    background:#FFFFFF;
+    color:#FF8D3A;
+}
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    margin-top:155px;
+    background:#644646;
+    color:#fff;
+    padding:80px 0 30px;
+    position:relative;
+}
+
+
+footer .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+
+/* ==========================
+   LEFT SECTION
+========================== */
+
+.footer-left{
+    flex:1;
+}
+
+.footer-left img{
+    margin-bottom:20px;
+    max-width:220px;
+}
+
+
+.footer-left p{
+    color:#f5f5f5;
+    font-size:20px;
+    line-height:32px;
+    margin-top:15px;
+}
+
+
+/* ==========================
+   CENTER SECTION
+========================== */
+
+.footer-center{
+    flex:1;
+}
+
+
+.footer-center h2{
+    color:#fff;
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+
+.footer-center p{
+    color:#f1f1f1;
+    font-size:20px;
+    line-height:32px;
+    margin-bottom:25px;
+}
+
+
+/* ==========================
+   RIGHT SECTION
+========================== */
+
+.footer-right{
+    flex:1;
+}
+
+
+.footer-right h3{
+    color:#fff;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+
+.footer-right p{
+    margin:15px 0;
+}
+
+
+.footer-right i{
+    color:#FFD233;
+    font-size:22px;
+    margin-right:10px;
+}
+
+
+
+/* ==========================
+   LINKS
+========================== */
+
+.footer-right a,
+.footer-left a{
+    color:#ffffff;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:500;
+    transition:.3s;
+}
+
+
+.footer-right a:hover,
+.footer-left a:hover{
+    color:#FFD233;
+}
+
+
+
+/* ==========================
+   BUTTON
+========================== */
+
+.button{
+    display:inline-block;
+    background:#FFCC00;
+    color:#222;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+
+.button:hover{
+    background:#ffffff;
+    color:#222;
+}
+
+
+
+/* ==========================
+   HR
+========================== */
+
+footer hr{
+    margin:50px 0 20px;
+    border:none;
+    height:1px;
+    background:#8b7c7c;
+}
+
+
+
+/* ==========================
+   COPYRIGHT
+========================== */

@@ -1,0 +1,705 @@
+/*=====================================
+        Large Laptop (1200px)
+=====================================*/
+@media (max-width:1200px){
+
+    .container{
+        width:95%;
+    }
+    
+    img{
+        max-width:100%;
+        height:auto;
+    }
+    
+    }
+    
+    
+    /*=====================================
+            Tablet (992px)
+    =====================================*/
+    @media (max-width:992px){
+    
+    .container{
+        width:90%;
+    }
+    
+    .row{
+        flex-wrap:wrap;
+    }
+    
+    /*========================
+            Navbar
+    =========================*/
+    
+    nav{
+        padding:15px 0;
+    }
+    
+    nav .container .row{
+        justify-content:space-between;
+        align-items:center;
+    }
+    
+    .menu-toggle{
+        display:block;
+        font-size:28px;
+        border:none;
+        background:none;
+        cursor:pointer;
+    }
+    
+    nav .menu{
+        display:none;
+        width:100%;
+        margin-top:20px;
+    }
+    
+    nav .menu.active{
+        display:block;
+    }
+    
+    nav .menu ul{
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    nav .menu ul li{
+        margin:12px 0;
+    }
+    
+    /*========================
+            Banner
+    =========================*/
+    
+    #banner{
+        padding:80px 0;
+    }
+    
+    #banner .banner-text,
+    #banner .banner-img{
+        width:100%;
+        text-align:center;
+    }
+    
+    #banner .banner-img{
+        margin-top:50px;
+    }
+    
+    #banner h1{
+        font-size:48px;
+    }
+    
+    #banner p{
+        width:100%;
+        margin:25px auto;
+    }
+    
+    #banner .button{
+        margin-top:20px;
+    }
+    
+    }
+    
+    
+    /*=====================================
+            Mobile (768px)
+    =====================================*/
+    @media (max-width:768px){
+    
+    .container{
+        width:92%;
+    }
+    
+    h1{
+        font-size:38px;
+    }
+    
+    h2{
+        font-size:34px !important;
+    }
+    
+    p{
+        font-size:16px !important;
+        line-height:30px !important;
+    }
+    
+    .button{
+        padding:14px 28px;
+        font-size:16px;
+    }
+    
+    #banner{
+        padding:60px 0;
+    }
+    
+    #banner h1{
+        font-size:34px;
+    }
+    
+    #banner h4{
+        font-size:18px;
+    }
+    
+    #banner p{
+        margin:20px auto;
+    }
+    
+    #banner .button{
+        display:inline-block;
+        margin-top:15px;
+    }
+    
+    }
+    
+    
+    /*=====================================
+            Small Mobile (576px)
+    =====================================*/
+    @media (max-width:576px){
+    
+    .container{
+        width:94%;
+    }
+    
+    #banner h1{
+        font-size:30px;
+    }
+    
+    #banner h4{
+        font-size:16px;
+    }
+    
+    #banner p{
+        font-size:15px !important;
+    }
+    
+    }
+    /*=====================================
+        ABOUT SECTION
+=====================================*/
+
+@media (max-width:992px){
+
+    #about{
+        margin-top:100px;
+    }
+    
+    #about .row{
+        flex-direction:column;
+    }
+    
+    #about .about-img,
+    #about .about-text{
+        width:100%;
+    }
+    
+    #about .about-img{
+        text-align:center;
+        margin-bottom:40px;
+    }
+    
+    #about .about-text{
+        text-align:center;
+        padding-left:0;
+    }
+    
+    #about .about-text p{
+        width:100%;
+    }
+    
+    #about .about-text ul{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:25px;
+    }
+    
+    }
+    
+    @media (max-width:768px){
+    
+    #about .about-text h2{
+        font-size:34px;
+    }
+    
+    #about .about-text p{
+        width:100%;
+    }
+    
+    #about .about-text ul{
+        flex-direction:column;
+        gap:15px;
+    }
+    
+    }
+    
+    
+    /*=====================================
+            PROJECT SECTION
+    =====================================*/
+    
+    @media (max-width:992px){
+    
+    #project .row{
+        flex-direction:column;
+    }
+    
+    #project .project-content,
+    #project .project-text{
+        width:100%;
+    }
+    
+    #project .project-content{
+        margin-bottom:50px;
+    }
+    
+    #project .project-text{
+        text-align:center;
+    }
+    
+    .project-text .list ul{
+        justify-content:center;
+    }
+    
+    }
+    
+    @media (max-width:768px){
+    
+    #project{
+        margin-top:100px;
+    }
+    
+    .project-text .list ul{
+        flex-direction:column;
+        gap:25px;
+    }
+    
+    .project-card{
+        margin-bottom:25px;
+    }
+    
+    }
+    
+    
+    /*=====================================
+            EXPERIENCE SECTION
+    =====================================*/
+    
+    @media (max-width:992px){
+    
+    .experience-area::before{
+        display:none;
+    }
+    
+    #experience .experience-content .row{
+        flex-direction:column;
+    }
+    
+    .experience-content .left-content,
+    .experience-content .right-content{
+        width:100%;
+    }
+    
+    .experience-content .left-content{
+        margin-bottom:15px;
+        padding-right:0;
+    }
+    
+    .experience-content .right-content{
+        padding-left:0;
+    }
+    
+    .right-content::before,
+    .right-content::after{
+        display:none;
+    }
+    
+    }
+    
+    @media (max-width:768px){
+    
+    #experience{
+        margin-top:100px;
+    }
+    
+    #experience h2{
+        font-size:34px;
+    }
+    
+    .experience-content{
+        margin-bottom:40px;
+    }
+    
+    .experience-content h3{
+        font-size:20px;
+    }
+    
+    .experience-content p{
+        width:100% !important;
+    }
+    
+    }
+    /*=====================================
+        EXPERTISE SECTION
+=====================================*/
+
+@media (max-width:992px){
+
+    #text-1{
+        margin-top:100px;
+    }
+    
+    #text-1 .row{
+        flex-direction:column;
+    }
+    
+    #text-1 .text-e,
+    #text-1 .text-1-cntnt{
+        width:100%;
+    }
+    
+    #text-1 .text-e{
+        text-align:center;
+    }
+    
+    #text-1 .text-e p{
+        width:100%;
+    }
+    
+    #text-1 .text-1-cntnt{
+        padding-left:0;
+        margin-top:60px;
+    }
+    
+    #text-1 .text-1-cntnt .button{
+        display:block;
+        margin:auto;
+        margin-bottom:30px;
+    }
+    
+    }
+    
+    @media (max-width:768px){
+    
+    .text-1-cntnt .progress-area{
+        margin-top:28px;
+    }
+    
+    .progress-top span{
+        top:-28px;
+        font-size:14px;
+    }
+    
+    }
+ /*=====================================
+        Education Responsive Fix
+=====================================*/
+
+@media screen and (max-width:992px){
+
+    #education .container > p{
+        width:100%;
+    }
+    
+    #education .row{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+    
+    #education .education-card{
+        flex:0 0 calc(50% - 10px);
+        max-width:calc(50% - 10px);
+    }
+    
+    }
+    
+    @media screen and (max-width:768px){
+    
+    #education{
+        padding:70px 0;
+    }
+    
+    #education .container > p{
+        width:100%;
+    }
+    
+    #education .row{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    #education .education-card{
+        width:100% !important;
+        max-width:400px;
+        flex:none;
+    }
+    
+    }
+    
+    
+    /*=====================================
+            SERVICE SECTION
+    =====================================*/
+    
+    @media (max-width:992px){
+    
+    #service{
+        height:auto;
+        padding:80px 0;
+    }
+    
+    #service .container>p{
+        width:100%;
+    }
+    
+    #service .row{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:25px;
+        margin-top:60px !important;
+    }
+    
+    #service .service-card{
+        width:47%;
+        margin:0;
+    }
+    
+    }
+    
+    @media (max-width:768px){
+    
+    #service .service-card{
+        width:100%;
+    }
+    
+    }
+    
+    
+    /*=====================================
+          CERTIFICATIONS SECTION
+    =====================================*/
+    
+    @media (max-width:992px){
+    
+    #certifications .container{
+        width:90%;
+    }
+    
+    #certifications .row{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:25px;
+    }
+    
+    #certifications .certifi-card{
+        width:47%;
+    }
+    
+    }
+    
+    @media (max-width:768px){
+    
+    #certifications{
+        padding:70px 0;
+    }
+    
+    #certifications .certifi-card{
+        width:100%;
+    }
+    
+    #certifications h2{
+        margin-bottom:50px;
+    }
+    
+    }
+    /*=====================================
+        FEEDBACK SECTION
+=====================================*/
+
+@media (max-width:992px){
+
+    #feedback{
+        margin-top:100px;
+    }
+    
+    .feedback-cntnt{
+        flex-direction:column;
+    }
+    
+    .feedback-cntnt .feedback-img,
+    .feedback-cntnt .feedback-text{
+        width:100%;
+    }
+    
+    .feedback-cntnt .feedback-img{
+        text-align:center;
+        margin-bottom:40px;
+    }
+    
+    .feedback-cntnt .feedback-text{
+        padding-left:0;
+        text-align:center;
+    }
+    
+    .feedback-cntnt .feedback-text p{
+        width:100%;
+    }
+    
+    .info .row{
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    }
+    
+    @media (max-width:768px){
+    
+    .feedback-cntnt .feedback-text{
+        margin-top:30px;
+    }
+    
+    .info{
+        justify-content:center;
+    }
+    
+    .info .row{
+        flex-direction:column;
+        text-align:center;
+    }
+    
+    .info .info-img,
+    .info .info-text{
+        width:100%;
+        margin:0;
+    }
+    
+    }
+    
+    
+    /*=====================================
+            SUBSCRIBE SECTION
+    =====================================*/
+    
+    @media (max-width:992px){
+    
+    #thumsup{
+        margin-top:100px;
+    }
+    
+    #thumsup .container .row{
+        flex-direction:column;
+        padding:60px 30px;
+        text-align:center;
+    }
+    
+    .subs-text,
+    .subs-email{
+        width:100%;
+    }
+    
+    .subs-email{
+        margin-top:40px;
+    }
+    
+    form{
+        width:100%;
+    }
+    
+    form input[type=email]{
+        width:100%;
+        border-radius:15px;
+    }
+    
+    form button{
+        position:static;
+        width:100%;
+        margin-top:15px;
+        border-radius:15px;
+    }
+    
+    }
+    
+    
+    /*=====================================
+            FOOTER
+    =====================================*/
+    
+    @media (max-width:768px){
+    
+    footer .row{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+    }
+    
+    footer .logo,
+    footer .social,
+    footer .copyright{
+        width:100%;
+    }
+    
+    }
+    
+    
+    /*=====================================
+            SCROLL BUTTON
+    =====================================*/
+    
+    @media (max-width:768px){
+    
+    #topBtn{
+        width:45px;
+        height:45px;
+        right:20px;
+        bottom:20px;
+        font-size:18px;
+    }
+    
+    }
+    
+    
+    /*=====================================
+            FINAL FIX
+    =====================================*/
+    
+    @media (max-width:992px){
+    
+    *{
+        box-sizing:border-box;
+    }
+    
+    html,
+    body{
+        overflow-x:hidden;
+    }
+    
+    img{
+        max-width:100%;
+        height:auto;
+    }
+    
+    .container{
+        width:92%;
+        margin:auto;
+    }
+    
+    }
+    
+    @media (max-width:576px){
+    
+    .container{
+        width:94%;
+    }
+    
+    .button{
+        width:100%;
+        text-align:center;
+    }
+    
+    }
