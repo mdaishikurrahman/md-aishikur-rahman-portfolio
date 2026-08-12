@@ -3,11 +3,15 @@
 // ================================
 
 const menuToggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".menu");
+const menu = document.querySelector("nav .menu");
 
-menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
-});
+if (menuToggle && menu) {
+
+    menuToggle.onclick = function () {
+        menu.classList.toggle("active");
+    };
+
+}
 
 
 // ================================
@@ -16,45 +20,51 @@ menuToggle.addEventListener("click", () => {
 
 const topBtn = document.getElementById("topBtn");
 
-window.addEventListener("scroll", () => {
+if (topBtn) {
 
-    if (window.scrollY > 300) {
-        topBtn.style.display = "block";
-    } else {
-        topBtn.style.display = "none";
-    }
+    window.addEventListener("scroll", () => {
 
-});
+        if (window.scrollY > 300) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
 
-topBtn.addEventListener("click", () => {
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
     });
 
-});
+    topBtn.addEventListener("click", () => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}
 
 
 // ================================
 // Smooth Scrolling
 // ================================
 
-document.querySelectorAll('nav a').forEach(link => {
+document.querySelectorAll("nav a").forEach(link => {
 
-    link.addEventListener('click', function(e) {
+    link.addEventListener("click", function(e) {
 
-        const target = document.querySelector(this.getAttribute('href'));
+        const target = document.querySelector(this.getAttribute("href"));
 
-        if(target){
+        if (target) {
 
             e.preventDefault();
 
             target.scrollIntoView({
-                behavior:'smooth'
+                behavior: "smooth"
             });
 
-            menu.classList.remove("active");
+            if (menu) {
+                menu.classList.remove("active");
+            }
 
         }
 
